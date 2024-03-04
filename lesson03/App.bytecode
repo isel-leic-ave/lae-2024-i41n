@@ -1,0 +1,8 @@
+Compiled from "App.java"
+public class pt.isel.App {
+  public pt.isel.App();
+  public static void main(java.lang.String[]);
+  public void perInstanceMethod();
+  public void otherInstanceMethod();
+  public static void perTypeMethod();
+}
