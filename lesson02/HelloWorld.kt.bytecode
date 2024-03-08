@@ -1,0 +1,15 @@
+Compiled from "HelloWorld.kt"
+public final class HelloWorldKt {
+  public static final void main();
+    Code:
+       0: ldc           #8                  // String Glorioso SLB
+       2: getstatic     #14                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       5: swap
+       6: invokevirtual #20                 // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
+       9: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: invokestatic  #23                 // Method main:()V
+       3: return
+}
