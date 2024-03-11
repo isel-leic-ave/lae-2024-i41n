@@ -1,0 +1,50 @@
+// class version 61.0 (61)
+// access flags 0x20
+class pt/isel/SavingsAccount {
+
+  // compiled from: SavingsAccount.java
+
+  // access flags 0xA
+  private static I accountsCount
+
+  // access flags 0x12
+  private final Ljava/time/LocalDate; createdDate
+
+  // access flags 0x2
+  private S accountCode
+
+  // access flags 0x2
+  private Ljava/lang/String; holderName
+
+  // access flags 0x2
+  private J balance
+
+  // access flags 0x2
+  private Z isActive
+
+  // access flags 0x1A
+  private final static D DEFAULT_INTEREST_REATE = 0.07
+
+  // access flags 0x12
+  private final D interestRate = 0.07
+
+  // access flags 0x0
+  <init>()V
+   L0
+    LINENUMBER 9 L0
+    ALOAD 0
+    INVOKESPECIAL java/lang/Object.<init> ()V
+   L1
+    LINENUMBER 11 L1
+    ALOAD 0
+    INVOKESTATIC java/time/LocalDate.now ()Ljava/time/LocalDate;
+    PUTFIELD pt/isel/SavingsAccount.createdDate : Ljava/time/LocalDate;
+   L2
+    LINENUMBER 17 L2
+    ALOAD 0
+    LDC 0.07
+    PUTFIELD pt/isel/SavingsAccount.interestRate : D
+    RETURN
+    MAXSTACK = 3
+    MAXLOCALS = 1
+}
