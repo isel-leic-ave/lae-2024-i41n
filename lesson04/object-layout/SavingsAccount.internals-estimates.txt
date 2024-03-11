@@ -1,0 +1,160 @@
+# WARNING: Unable to attach Serviceability Agent. You can try again with escalated privileges. Two options: a) use -Djol.tryWithSudo=true to try with sudo; b) echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope
+# VM mode: 64 bits
+# Compressed references (oops): 3-bit shift
+# Compressed class pointers: 3-bit shift
+# WARNING | Compressed references base/shifts are guessed by the experiment!
+# WARNING | Therefore, computed addresses are just guesses, and ARE NOT RELIABLE.
+# WARNING | Make sure to attach Serviceability Agent to get the reliable addresses.
+# Object alignment: 8 bytes
+#                       ref, bool, byte, char, shrt,  int,  flt,  lng,  dbl
+# Field sizes:            4,    1,    1,    2,    2,    4,    4,    8,    8
+# Array element sizes:    4,    1,    1,    2,    2,    4,    4,    8,    8
+# Array base offsets:    16,   16,   16,   16,   16,   16,   16,   16,   16
+
+***** Hotspot Layout Simulation (JDK 8, 64-bit model, NO compressed references, NO compressed classes, 8-byte aligned)
+***** Hotspot Layout Simulation (JDK 15, 64-bit model, NO compressed references, NO compressed classes, 8-byte aligned)
+
+pt.isel.SavingsAccount object internals:
+OFF  SZ               TYPE DESCRIPTION                  VALUE
+  0   8                    (object header: mark)        N/A
+  8   8                    (object header: class)       N/A
+ 16   8               long SavingsAccount.balance       N/A
+ 24   2              short SavingsAccount.accountCode   N/A
+ 26   1            boolean SavingsAccount.isActive      N/A
+ 27   5                    (alignment/padding gap)      
+ 32   8   java.lang.String SavingsAccount.holderName    N/A
+Instance size: 40 bytes
+Space losses: 5 bytes internal + 0 bytes external = 5 bytes total
+
+***** Hotspot Layout Simulation (JDK 99, 64-bit model, Lilliput (ultimate target), compressed references, compressed classes, 16-byte aligned)
+
+pt.isel.SavingsAccount object internals:
+OFF  SZ               TYPE DESCRIPTION                  VALUE
+  0   1                    (object header: mark)        N/A
+  1   3                    (object header: class)       N/A
+  4   2              short SavingsAccount.accountCode   N/A
+  6   1            boolean SavingsAccount.isActive      N/A
+  7   1                    (alignment/padding gap)      
+  8   8               long SavingsAccount.balance       N/A
+ 16   4   java.lang.String SavingsAccount.holderName    N/A
+ 20  12                    (object alignment gap)       
+Instance size: 32 bytes
+Space losses: 1 bytes internal + 12 bytes external = 13 bytes total
+
+***** Hotspot Layout Simulation (JDK 8, 64-bit model, compressed references, compressed classes, 8-byte aligned)
+***** Hotspot Layout Simulation (JDK 8, 64-bit model, compressed references, compressed classes, 16-byte aligned)
+***** Hotspot Layout Simulation (JDK 15, 64-bit model, compressed references, compressed classes, 8-byte aligned)
+***** Hotspot Layout Simulation (JDK 15, 64-bit model, compressed references, compressed classes, 16-byte aligned)
+
+pt.isel.SavingsAccount object internals:
+OFF  SZ               TYPE DESCRIPTION                  VALUE
+  0   8                    (object header: mark)        N/A
+  8   4                    (object header: class)       N/A
+ 12   2              short SavingsAccount.accountCode   N/A
+ 14   1            boolean SavingsAccount.isActive      N/A
+ 15   1                    (alignment/padding gap)      
+ 16   8               long SavingsAccount.balance       N/A
+ 24   4   java.lang.String SavingsAccount.holderName    N/A
+ 28   4                    (object alignment gap)       
+Instance size: 32 bytes
+Space losses: 1 bytes internal + 4 bytes external = 5 bytes total
+
+***** Hotspot Layout Simulation (JDK 15, 64-bit model, NO compressed references, compressed classes, 8-byte aligned)
+***** Hotspot Layout Simulation (JDK 15, 64-bit model, NO compressed references, compressed classes, 16-byte aligned)
+
+pt.isel.SavingsAccount object internals:
+OFF  SZ               TYPE DESCRIPTION                  VALUE
+  0   8                    (object header: mark)        N/A
+  8   4                    (object header: class)       N/A
+ 12   2              short SavingsAccount.accountCode   N/A
+ 14   1            boolean SavingsAccount.isActive      N/A
+ 15   1                    (alignment/padding gap)      
+ 16   8               long SavingsAccount.balance       N/A
+ 24   8   java.lang.String SavingsAccount.holderName    N/A
+Instance size: 32 bytes
+Space losses: 1 bytes internal + 0 bytes external = 1 bytes total
+
+***** Hotspot Layout Simulation (JDK 99, 64-bit model, Lilliput (current experiment), compressed references, compressed classes, 16-byte aligned)
+
+pt.isel.SavingsAccount object internals:
+OFF  SZ               TYPE DESCRIPTION                  VALUE
+  0   8                    (object header: mark)        N/A
+  8   8               long SavingsAccount.balance       N/A
+ 16   2              short SavingsAccount.accountCode   N/A
+ 18   1            boolean SavingsAccount.isActive      N/A
+ 19   1                    (alignment/padding gap)      
+ 20   4   java.lang.String SavingsAccount.holderName    N/A
+ 24   8                    (object alignment gap)       
+Instance size: 32 bytes
+Space losses: 1 bytes internal + 8 bytes external = 9 bytes total
+
+***** Hotspot Layout Simulation (JDK 99, 64-bit model, Lilliput (current experiment), NO compressed references, compressed classes, 8-byte aligned)
+
+pt.isel.SavingsAccount object internals:
+OFF  SZ               TYPE DESCRIPTION                  VALUE
+  0   8                    (object header: mark)        N/A
+  8   8               long SavingsAccount.balance       N/A
+ 16   2              short SavingsAccount.accountCode   N/A
+ 18   1            boolean SavingsAccount.isActive      N/A
+ 19   5                    (alignment/padding gap)      
+ 24   8   java.lang.String SavingsAccount.holderName    N/A
+Instance size: 32 bytes
+Space losses: 5 bytes internal + 0 bytes external = 5 bytes total
+
+***** Hotspot Layout Simulation (JDK 8, 32-bit model, 8-byte aligned)
+***** Hotspot Layout Simulation (JDK 15, 32-bit model, 8-byte aligned)
+
+pt.isel.SavingsAccount object internals:
+OFF  SZ               TYPE DESCRIPTION                  VALUE
+  0   4                    (object header: mark)        N/A
+  4   4                    (object header: class)       N/A
+  8   8               long SavingsAccount.balance       N/A
+ 16   2              short SavingsAccount.accountCode   N/A
+ 18   1            boolean SavingsAccount.isActive      N/A
+ 19   1                    (alignment/padding gap)      
+ 20   4   java.lang.String SavingsAccount.holderName    N/A
+Instance size: 24 bytes
+Space losses: 1 bytes internal + 0 bytes external = 1 bytes total
+
+***** Hotspot Layout Simulation (JDK 99, 64-bit model, Lilliput (ultimate target), NO compressed references, compressed classes, 8-byte aligned)
+
+pt.isel.SavingsAccount object internals:
+OFF  SZ               TYPE DESCRIPTION                  VALUE
+  0   1                    (object header: mark)        N/A
+  1   3                    (object header: class)       N/A
+  4   2              short SavingsAccount.accountCode   N/A
+  6   1            boolean SavingsAccount.isActive      N/A
+  7   1                    (alignment/padding gap)      
+  8   8               long SavingsAccount.balance       N/A
+ 16   8   java.lang.String SavingsAccount.holderName    N/A
+Instance size: 24 bytes
+Space losses: 1 bytes internal + 0 bytes external = 1 bytes total
+
+***** Hotspot Layout Simulation (JDK 99, 64-bit model, Lilliput (ultimate target), compressed references, compressed classes, 8-byte aligned)
+
+pt.isel.SavingsAccount object internals:
+OFF  SZ               TYPE DESCRIPTION                  VALUE
+  0   1                    (object header: mark)        N/A
+  1   3                    (object header: class)       N/A
+  4   2              short SavingsAccount.accountCode   N/A
+  6   1            boolean SavingsAccount.isActive      N/A
+  7   1                    (alignment/padding gap)      
+  8   8               long SavingsAccount.balance       N/A
+ 16   4   java.lang.String SavingsAccount.holderName    N/A
+ 20   4                    (object alignment gap)       
+Instance size: 24 bytes
+Space losses: 1 bytes internal + 4 bytes external = 5 bytes total
+
+***** Hotspot Layout Simulation (JDK 99, 64-bit model, Lilliput (current experiment), compressed references, compressed classes, 8-byte aligned)
+
+pt.isel.SavingsAccount object internals:
+OFF  SZ               TYPE DESCRIPTION                  VALUE
+  0   8                    (object header: mark)        N/A
+  8   8               long SavingsAccount.balance       N/A
+ 16   2              short SavingsAccount.accountCode   N/A
+ 18   1            boolean SavingsAccount.isActive      N/A
+ 19   1                    (alignment/padding gap)      
+ 20   4   java.lang.String SavingsAccount.holderName    N/A
+Instance size: 24 bytes
+Space losses: 1 bytes internal + 0 bytes external = 1 bytes total
+

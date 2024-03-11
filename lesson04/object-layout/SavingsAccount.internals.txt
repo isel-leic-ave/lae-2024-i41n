@@ -1,0 +1,28 @@
+# WARNING: Unable to attach Serviceability Agent. You can try again with escalated privileges. Two options: a) use -Djol.tryWithSudo=true to try with sudo; b) echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope
+# VM mode: 64 bits
+# Compressed references (oops): 3-bit shift
+# Compressed class pointers: 3-bit shift
+# WARNING | Compressed references base/shifts are guessed by the experiment!
+# WARNING | Therefore, computed addresses are just guesses, and ARE NOT RELIABLE.
+# WARNING | Make sure to attach Serviceability Agent to get the reliable addresses.
+# Object alignment: 8 bytes
+#                       ref, bool, byte, char, shrt,  int,  flt,  lng,  dbl
+# Field sizes:            4,    1,    1,    2,    2,    4,    4,    8,    8
+# Array element sizes:    4,    1,    1,    2,    2,    4,    4,    8,    8
+# Array base offsets:    16,   16,   16,   16,   16,   16,   16,   16,   16
+
+Instantiated the sample instance via default constructor.
+
+pt.isel.SavingsAccount object internals:
+OFF  SZ               TYPE DESCRIPTION                  VALUE
+  0   8                    (object header: mark)        0x0000000000000001 (non-biasable; age: 0)
+  8   4                    (object header: class)       0x00c84800
+ 12   2              short SavingsAccount.accountCode   0
+ 14   1            boolean SavingsAccount.isActive      false
+ 15   1                    (alignment/padding gap)      
+ 16   8               long SavingsAccount.balance       0
+ 24   4   java.lang.String SavingsAccount.holderName    null
+ 28   4                    (object alignment gap)       
+Instance size: 32 bytes
+Space losses: 1 bytes internal + 4 bytes external = 5 bytes total
+
