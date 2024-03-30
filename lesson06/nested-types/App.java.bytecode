@@ -1,0 +1,36 @@
+Compiled from "App.java"
+public class App {
+  public App();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: new           #7                  // class Outer
+       3: dup
+       4: invokespecial #9                  // Method Outer."<init>":()V
+       7: astore_1
+       8: new           #7                  // class Outer
+      11: dup
+      12: invokespecial #9                  // Method Outer."<init>":()V
+      15: astore_2
+      16: aload_1
+      17: invokevirtual #10                 // Method Outer.m1:()V
+      20: aload_2
+      21: invokevirtual #10                 // Method Outer.m1:()V
+      24: new           #13                 // class A
+      27: dup
+      28: bipush        7
+      30: invokespecial #15                 // Method A."<init>":(I)V
+      33: invokevirtual #18                 // Method A.makeB:()LA$B;
+      36: invokevirtual #22                 // Method A$B.foo:()V
+      39: new           #13                 // class A
+      42: dup
+      43: bipush        11
+      45: invokespecial #15                 // Method A."<init>":(I)V
+      48: invokevirtual #18                 // Method A.makeB:()LA$B;
+      51: invokevirtual #22                 // Method A$B.foo:()V
+      54: return
+}

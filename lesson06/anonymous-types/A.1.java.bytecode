@@ -1,0 +1,20 @@
+Compiled from "App.java"
+class A$1 extends B {
+  final A this$0;
+
+  A$1(A);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #1                  // Field this$0:LA;
+       5: aload_0
+       6: invokespecial #7                  // Method B."<init>":()V
+       9: return
+
+  public void foo();
+    Code:
+       0: getstatic     #13                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       3: ldc           #19                 // String I am a different B
+       5: invokevirtual #21                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       8: return
+}

@@ -1,0 +1,152 @@
+Compiled from "Person.kt"
+public final class PersonKt {
+  public PersonKt(java.lang.String, java.lang.String);
+    Code:
+       0: aload_1
+       1: ldc           #9                  // String name
+       3: invokestatic  #15                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: aload_2
+       7: ldc           #17                 // String address
+       9: invokestatic  #15                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+      12: aload_0
+      13: invokespecial #20                 // Method java/lang/Object."<init>":()V
+      16: aload_0
+      17: aload_1
+      18: putfield      #23                 // Field name:Ljava/lang/String;
+      21: aload_0
+      22: aload_2
+      23: putfield      #25                 // Field address:Ljava/lang/String;
+      26: return
+
+  public final java.lang.String getName();
+    Code:
+       0: aload_0
+       1: getfield      #23                 // Field name:Ljava/lang/String;
+       4: areturn
+
+  public final java.lang.String getAddress();
+    Code:
+       0: aload_0
+       1: getfield      #25                 // Field address:Ljava/lang/String;
+       4: areturn
+
+  public final java.lang.String component1();
+    Code:
+       0: aload_0
+       1: getfield      #23                 // Field name:Ljava/lang/String;
+       4: areturn
+
+  public final java.lang.String component2();
+    Code:
+       0: aload_0
+       1: getfield      #25                 // Field address:Ljava/lang/String;
+       4: areturn
+
+  public final PersonKt copy(java.lang.String, java.lang.String);
+    Code:
+       0: aload_1
+       1: ldc           #9                  // String name
+       3: invokestatic  #15                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: aload_2
+       7: ldc           #17                 // String address
+       9: invokestatic  #15                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+      12: new           #2                  // class PersonKt
+      15: dup
+      16: aload_1
+      17: aload_2
+      18: invokespecial #36                 // Method "<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      21: areturn
+
+  public static PersonKt copy$default(PersonKt, java.lang.String, java.lang.String, int, java.lang.Object);
+    Code:
+       0: iload_3
+       1: iconst_1
+       2: iand
+       3: ifeq          11
+       6: aload_0
+       7: getfield      #23                 // Field name:Ljava/lang/String;
+      10: astore_1
+      11: iload_3
+      12: iconst_2
+      13: iand
+      14: ifeq          22
+      17: aload_0
+      18: getfield      #25                 // Field address:Ljava/lang/String;
+      21: astore_2
+      22: aload_0
+      23: aload_1
+      24: aload_2
+      25: invokevirtual #40                 // Method copy:(Ljava/lang/String;Ljava/lang/String;)LPersonKt;
+      28: areturn
+
+  public java.lang.String toString();
+    Code:
+       0: new           #43                 // class java/lang/StringBuilder
+       3: dup
+       4: invokespecial #44                 // Method java/lang/StringBuilder."<init>":()V
+       7: ldc           #46                 // String PersonKt(name=
+       9: invokevirtual #50                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      12: aload_0
+      13: getfield      #23                 // Field name:Ljava/lang/String;
+      16: invokevirtual #50                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      19: ldc           #52                 // String , address=
+      21: invokevirtual #50                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      24: aload_0
+      25: getfield      #25                 // Field address:Ljava/lang/String;
+      28: invokevirtual #50                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      31: bipush        41
+      33: invokevirtual #55                 // Method java/lang/StringBuilder.append:(C)Ljava/lang/StringBuilder;
+      36: invokevirtual #57                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      39: areturn
+
+  public int hashCode();
+    Code:
+       0: aload_0
+       1: getfield      #23                 // Field name:Ljava/lang/String;
+       4: invokevirtual #63                 // Method java/lang/String.hashCode:()I
+       7: istore_1
+       8: iload_1
+       9: bipush        31
+      11: imul
+      12: aload_0
+      13: getfield      #25                 // Field address:Ljava/lang/String;
+      16: invokevirtual #63                 // Method java/lang/String.hashCode:()I
+      19: iadd
+      20: istore_1
+      21: iload_1
+      22: ireturn
+
+  public boolean equals(java.lang.Object);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: if_acmpne     7
+       5: iconst_1
+       6: ireturn
+       7: aload_1
+       8: instanceof    #2                  // class PersonKt
+      11: ifne          16
+      14: iconst_0
+      15: ireturn
+      16: aload_1
+      17: checkcast     #2                  // class PersonKt
+      20: astore_2
+      21: aload_0
+      22: getfield      #23                 // Field name:Ljava/lang/String;
+      25: aload_2
+      26: getfield      #23                 // Field name:Ljava/lang/String;
+      29: invokestatic  #72                 // Method kotlin/jvm/internal/Intrinsics.areEqual:(Ljava/lang/Object;Ljava/lang/Object;)Z
+      32: ifne          37
+      35: iconst_0
+      36: ireturn
+      37: aload_0
+      38: getfield      #25                 // Field address:Ljava/lang/String;
+      41: aload_2
+      42: getfield      #25                 // Field address:Ljava/lang/String;
+      45: invokestatic  #72                 // Method kotlin/jvm/internal/Intrinsics.areEqual:(Ljava/lang/Object;Ljava/lang/Object;)Z
+      48: ifne          53
+      51: iconst_0
+      52: ireturn
+      53: iconst_1
+      54: ireturn
+}

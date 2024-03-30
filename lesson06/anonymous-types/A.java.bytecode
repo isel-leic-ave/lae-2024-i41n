@@ -1,0 +1,24 @@
+Compiled from "App.java"
+class A {
+  final B dummy;
+
+  A();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: new           #7                  // class A$1
+       8: dup
+       9: aload_0
+      10: invokespecial #9                  // Method A$1."<init>":(LA;)V
+      13: putfield      #12                 // Field dummy:LB;
+      16: return
+
+  public B makeB();
+    Code:
+       0: new           #18                 // class A$2
+       3: dup
+       4: aload_0
+       5: invokespecial #20                 // Method A$2."<init>":(LA;)V
+       8: areturn
+}

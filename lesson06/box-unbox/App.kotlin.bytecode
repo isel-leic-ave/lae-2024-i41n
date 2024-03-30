@@ -1,0 +1,165 @@
+Classfile /Users/luisfalcao/Library/CloudStorage/OneDrive-InstitutoSuperiordeEngenhariadeLisboa/ISEL/Disciplinas/2023_2024/2023-2024VerLAE/Repositories/lae-2024-i41n-LF/lesson06/box-unbox/AppKt.class
+  Last modified Mar 11, 2024; size 1113 bytes
+  SHA-256 checksum baf72ca9247e4afb5d5000112a14fdbabe4e207b7ff8c45d59c239928fa53a1e
+  Compiled from "App.kt"
+public final class AppKt
+  minor version: 0
+  major version: 52
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #2                          // AppKt
+  super_class: #4                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 2
+Constant pool:
+   #1 = Utf8               AppKt
+   #2 = Class              #1             // AppKt
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               incSeven
+   #6 = Utf8               (Ljava/lang/Integer;)Ljava/lang/Integer;
+   #7 = Utf8               Lorg/jetbrains/annotations/Nullable;
+   #8 = Utf8               Failed requirement.
+   #9 = String             #8             // Failed requirement.
+  #10 = Utf8               java/lang/IllegalArgumentException
+  #11 = Class              #10            // java/lang/IllegalArgumentException
+  #12 = Utf8               toString
+  #13 = Utf8               ()Ljava/lang/String;
+  #14 = NameAndType        #12:#13        // toString:()Ljava/lang/String;
+  #15 = Methodref          #4.#14         // java/lang/Object.toString:()Ljava/lang/String;
+  #16 = Utf8               <init>
+  #17 = Utf8               (Ljava/lang/String;)V
+  #18 = NameAndType        #16:#17        // "<init>":(Ljava/lang/String;)V
+  #19 = Methodref          #11.#18        // java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+  #20 = Utf8               java/lang/Integer
+  #21 = Class              #20            // java/lang/Integer
+  #22 = Utf8               intValue
+  #23 = Utf8               ()I
+  #24 = NameAndType        #22:#23        // intValue:()I
+  #25 = Methodref          #21.#24        // java/lang/Integer.intValue:()I
+  #26 = Utf8               valueOf
+  #27 = Utf8               (I)Ljava/lang/Integer;
+  #28 = NameAndType        #26:#27        // valueOf:(I)Ljava/lang/Integer;
+  #29 = Methodref          #21.#28        // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+  #30 = Utf8               a
+  #31 = Utf8               I
+  #32 = Utf8               b
+  #33 = Utf8               Ljava/lang/Integer;
+  #34 = Utf8               nr
+  #35 = Utf8               foo
+  #36 = Utf8               (I)I
+  #37 = NameAndType        #5:#6          // incSeven:(Ljava/lang/Integer;)Ljava/lang/Integer;
+  #38 = Methodref          #2.#37         // AppKt.incSeven:(Ljava/lang/Integer;)Ljava/lang/Integer;
+  #39 = Utf8               l
+  #40 = Utf8               Lkotlin/Metadata;
+  #41 = Utf8               mv
+  #42 = Integer            1
+  #43 = Integer            9
+  #44 = Integer            0
+  #45 = Utf8               k
+  #46 = Integer            2
+  #47 = Utf8               xi
+  #48 = Integer            48
+  #49 = Utf8               d1
+  #50 = Utf8               \u0000\n\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\u001a\u000e\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0001\u001a\u0017\u0010\u0003\u001a\u0004\u0018\u00010\u00012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0001¢\u0006\u0002\u0010\u0005
+  #51 = Utf8               d2
+  #52 = Utf8
+  #53 = Utf8               App.kt
+  #54 = Utf8               Code
+  #55 = Utf8               StackMapTable
+  #56 = Utf8               LineNumberTable
+  #57 = Utf8               LocalVariableTable
+  #58 = Utf8               RuntimeInvisibleAnnotations
+  #59 = Utf8               RuntimeInvisibleParameterAnnotations
+  #60 = Utf8               SourceFile
+  #61 = Utf8               RuntimeVisibleAnnotations
+{
+  public static final java.lang.Integer incSeven(java.lang.Integer);
+    descriptor: (Ljava/lang/Integer;)Ljava/lang/Integer;
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    Code:
+      stack=3, locals=3, args_size=1
+         0: aload_0
+         1: ifnull        8
+         4: iconst_1
+         5: goto          9
+         8: iconst_0
+         9: ifne          27
+        12: ldc           #9                  // String Failed requirement.
+        14: astore_2
+        15: new           #11                 // class java/lang/IllegalArgumentException
+        18: dup
+        19: aload_2
+        20: invokevirtual #15                 // Method java/lang/Object.toString:()Ljava/lang/String;
+        23: invokespecial #19                 // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+        26: athrow
+        27: aload_0
+        28: invokevirtual #25                 // Method java/lang/Integer.intValue:()I
+        31: bipush        7
+        33: iadd
+        34: istore_1
+        35: aload_0
+        36: astore_2
+        37: iload_1
+        38: aload_2
+        39: invokevirtual #25                 // Method java/lang/Integer.intValue:()I
+        42: iadd
+        43: invokestatic  #29                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        46: areturn
+      StackMapTable: number_of_entries = 3
+        frame_type = 8 /* same */
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+        frame_type = 17 /* same */
+      LineNumberTable:
+        line 3: 0
+        line 4: 27
+        line 5: 35
+        line 7: 37
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           35      12     1     a   I
+           37      10     2     b   Ljava/lang/Integer;
+            0      47     0    nr   Ljava/lang/Integer;
+    RuntimeInvisibleAnnotations:
+      0: #7()
+        org.jetbrains.annotations.Nullable
+    RuntimeInvisibleParameterAnnotations:
+      parameter 0:
+        0: #7()
+          org.jetbrains.annotations.Nullable
+
+  public static final int foo(int);
+    descriptor: (I)I
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    Code:
+      stack=2, locals=1, args_size=1
+         0: iload_0
+         1: invokestatic  #29                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+         4: invokestatic  #38                 // Method incSeven:(Ljava/lang/Integer;)Ljava/lang/Integer;
+         7: dup
+         8: ifnull        17
+        11: invokevirtual #25                 // Method java/lang/Integer.intValue:()I
+        14: goto          19
+        17: pop
+        18: iconst_0
+        19: ireturn
+      StackMapTable: number_of_entries = 2
+        frame_type = 81 /* same_locals_1_stack_item */
+          stack = [ class java/lang/Integer ]
+        frame_type = 65 /* same_locals_1_stack_item */
+          stack = [ int ]
+      LineNumberTable:
+        line 12: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      20     0     l   I
+}
+SourceFile: "App.kt"
+RuntimeVisibleAnnotations:
+  0: #40(#41=[I#42,I#43,I#44],#45=I#46,#47=I#48,#49=[s#50],#51=[s#35,s#52,s#39,s#5,s#34,s#6])
+    kotlin.Metadata(
+      mv=[1,9,0]
+      k=2
+      xi=48
+      d1=["\u0000\n\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\u001a\u000e\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0001\u001a\u0017\u0010\u0003\u001a\u0004\u0018\u00010\u00012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0001¢\u0006\u0002\u0010\u0005"]
+      d2=["foo","","l","incSeven","nr","(Ljava/lang/Integer;)Ljava/lang/Integer;"]
+    )

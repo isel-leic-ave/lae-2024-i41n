@@ -1,0 +1,14 @@
+Compiled from "App.java"
+class Outer$Nested {
+  Outer$Nested();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  void m1();
+    Code:
+       0: bipush        11
+       2: putstatic     #7                  // Field Outer.classField:I
+       5: return
+}
