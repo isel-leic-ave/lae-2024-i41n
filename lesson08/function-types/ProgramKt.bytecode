@@ -1,0 +1,60 @@
+Compiled from "Program.kt"
+public final class ProgramKt {
+  public static final void main();
+    Code:
+       0: getstatic     #12                 // Field ProgramKt$main$f1$1.INSTANCE:LProgramKt$main$f1$1;
+       3: checkcast     #14                 // class kotlin/jvm/functions/Function2
+       6: astore_0
+       7: return
+
+  public static final int xpto(java.lang.String, char);
+    Code:
+       0: aload_0
+       1: ldc           #21                 // String s
+       3: invokestatic  #27                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: new           #29                 // class java/lang/StringBuilder
+       9: dup
+      10: invokespecial #32                 // Method java/lang/StringBuilder."<init>":()V
+      13: aload_0
+      14: invokevirtual #36                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      17: iload_1
+      18: invokevirtual #39                 // Method java/lang/StringBuilder.append:(C)Ljava/lang/StringBuilder;
+      21: invokevirtual #43                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      24: getstatic     #49                 // Field java/lang/System.out:Ljava/io/PrintStream;
+      27: swap
+      28: invokevirtual #55                 // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
+      31: new           #29                 // class java/lang/StringBuilder
+      34: dup
+      35: invokespecial #32                 // Method java/lang/StringBuilder."<init>":()V
+      38: aload_0
+      39: invokevirtual #36                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      42: iload_1
+      43: invokevirtual #39                 // Method java/lang/StringBuilder.append:(C)Ljava/lang/StringBuilder;
+      46: invokevirtual #43                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      49: invokevirtual #61                 // Method java/lang/String.length:()I
+      52: ireturn
+
+  public static final void ypto(kotlin.jvm.functions.Function2<? super java.lang.String, ? super java.lang.Character, java.lang.Integer>);
+    Code:
+       0: aload_0
+       1: ldc           #69                 // String ff
+       3: invokestatic  #27                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: aload_0
+       7: ldc           #71                 // String SLB
+       9: bipush        65
+      11: invokestatic  #77                 // Method java/lang/Character.valueOf:(C)Ljava/lang/Character;
+      14: invokeinterface #81,  3           // InterfaceMethod kotlin/jvm/functions/Function2.invoke:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      19: pop
+      20: return
+
+  public static final kotlin.jvm.functions.Function2<java.lang.String, java.lang.Character, java.lang.Integer> zpto();
+    Code:
+       0: getstatic     #89                 // Field ProgramKt$zpto$1.INSTANCE:LProgramKt$zpto$1;
+       3: checkcast     #14                 // class kotlin/jvm/functions/Function2
+       6: areturn
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: invokestatic  #92                 // Method main:()V
+       3: return
+}
