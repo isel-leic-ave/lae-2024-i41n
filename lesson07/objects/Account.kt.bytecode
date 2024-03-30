@@ -1,0 +1,40 @@
+Compiled from "Account.kt"
+public final class Account {
+  public static final Account$Companion Companion;
+
+  public Account();
+    Code:
+       0: aload_0
+       1: invokespecial #8                  // Method java/lang/Object."<init>":()V
+       4: nop
+       5: getstatic     #12                 // Field Companion:LAccount$Companion;
+       8: pop
+       9: getstatic     #16                 // Field countInstances:I
+      12: istore_1
+      13: iload_1
+      14: iconst_1
+      15: iadd
+      16: putstatic     #16                 // Field countInstances:I
+      19: nop
+      20: return
+
+  public static final int access$getCountInstances$cp();
+    Code:
+       0: getstatic     #16                 // Field countInstances:I
+       3: ireturn
+
+  public static final void access$setCountInstances$cp(int);
+    Code:
+       0: iload_0
+       1: putstatic     #16                 // Field countInstances:I
+       4: return
+
+  static {};
+    Code:
+       0: new           #26                 // class Account$Companion
+       3: dup
+       4: aconst_null
+       5: invokespecial #29                 // Method Account$Companion."<init>":(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+       8: putstatic     #12                 // Field Companion:LAccount$Companion;
+      11: return
+}

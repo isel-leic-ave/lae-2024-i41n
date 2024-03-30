@@ -1,0 +1,115 @@
+Classfile /Users/luisfalcao/Library/CloudStorage/OneDrive-InstitutoSuperiordeEngenhariadeLisboa/ISEL/Disciplinas/2023_2024/2023-2024VerLAE/Repositories/lae-2024-i42d-LF/lesson07/objects/Account$Companion.class
+  Last modified Mar 15, 2024; size 1052 bytes
+  SHA-256 checksum fde6705ee2d3905f64d651f9579da7dfac865cca2619d91e12c2edbccb3d9dd7
+  Compiled from "Account.kt"
+public final class Account$Companion
+  minor version: 0
+  major version: 52
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #2                          // Account$Companion
+  super_class: #4                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 4, attributes: 3
+Constant pool:
+   #1 = Utf8               Account$Companion
+   #2 = Class              #1             // Account$Companion
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = NameAndType        #5:#6          // "<init>":()V
+   #8 = Methodref          #4.#7          // java/lang/Object."<init>":()V
+   #9 = Utf8               this
+  #10 = Utf8               LAccount$Companion;
+  #11 = Utf8               getCountInstances
+  #12 = Utf8               ()I
+  #13 = Utf8               Account
+  #14 = Class              #13            // Account
+  #15 = Utf8               access$getCountInstances$cp
+  #16 = NameAndType        #15:#12        // access$getCountInstances$cp:()I
+  #17 = Methodref          #14.#16        // Account.access$getCountInstances$cp:()I
+  #18 = Utf8               setCountInstances
+  #19 = Utf8               (I)V
+  #20 = Utf8               access$setCountInstances$cp
+  #21 = NameAndType        #20:#19        // access$setCountInstances$cp:(I)V
+  #22 = Methodref          #14.#21        // Account.access$setCountInstances$cp:(I)V
+  #23 = Utf8               <set-?>
+  #24 = Utf8               I
+  #25 = Utf8               (Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+  #26 = Methodref          #2.#7          // Account$Companion."<init>":()V
+  #27 = Utf8               $constructor_marker
+  #28 = Utf8               Lkotlin/jvm/internal/DefaultConstructorMarker;
+  #29 = Utf8               Lkotlin/Metadata;
+  #30 = Utf8               mv
+  #31 = Integer            1
+  #32 = Integer            9
+  #33 = Integer            0
+  #34 = Utf8               k
+  #35 = Utf8               xi
+  #36 = Integer            48
+  #37 = Utf8               d1
+  #38 = Utf8               \u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0004\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u001a\u0010\u0003\u001a\u00020\u0004X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0005\u0010\u0006\"\u0004\b\u0007\u0010\b
+  #39 = Utf8               d2
+  #40 = Utf8
+  #41 = Utf8               countInstances
+  #42 = Utf8               Companion
+  #43 = Utf8               Account.kt
+  #44 = Utf8               Code
+  #45 = Utf8               LineNumberTable
+  #46 = Utf8               LocalVariableTable
+  #47 = Utf8               InnerClasses
+  #48 = Utf8               SourceFile
+  #49 = Utf8               RuntimeVisibleAnnotations
+{
+  public final int getCountInstances();
+    descriptor: ()I
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=1, locals=1, args_size=1
+         0: invokestatic  #17                 // Method Account.access$getCountInstances$cp:()I
+         3: ireturn
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       4     0  this   LAccount$Companion;
+
+  public final void setCountInstances(int);
+    descriptor: (I)V
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=1, locals=2, args_size=2
+         0: iload_1
+         1: invokestatic  #22                 // Method Account.access$setCountInstances$cp:(I)V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   LAccount$Companion;
+            0       5     1 <set-?>   I
+
+  public Account$Companion(kotlin.jvm.internal.DefaultConstructorMarker);
+    descriptor: (Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    flags: (0x1001) ACC_PUBLIC, ACC_SYNTHETIC
+    Code:
+      stack=1, locals=2, args_size=2
+         0: aload_0
+         1: invokespecial #26                 // Method "<init>":()V
+         4: return
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   LAccount$Companion;
+            0       5     1 $constructor_marker   Lkotlin/jvm/internal/DefaultConstructorMarker;
+}
+InnerClasses:
+  public static final #42= #2 of #14;     // Companion=class Account$Companion of class Account
+SourceFile: "Account.kt"
+RuntimeVisibleAnnotations:
+  0: #29(#30=[I#31,I#32,I#33],#34=I#31,#35=I#36,#37=[s#38],#39=[s#10,s#40,s#6,s#41,s#40,s#11,s#12,s#18,s#19])
+    kotlin.Metadata(
+      mv=[1,9,0]
+      k=1
+      xi=48
+      d1=["\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0004\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u001a\u0010\u0003\u001a\u00020\u0004X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0005\u0010\u0006\"\u0004\b\u0007\u0010\b"]
+      d2=["LAccount$Companion;","","()V","countInstances","","getCountInstances","()I","setCountInstances","(I)V"]
+    )

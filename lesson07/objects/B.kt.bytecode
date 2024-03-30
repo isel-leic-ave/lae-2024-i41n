@@ -1,0 +1,26 @@
+Compiled from "Program.kt"
+public final class B {
+  public static final B INSTANCE;
+
+  private B();
+    Code:
+       0: aload_0
+       1: invokespecial #8                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public final void foo();
+    Code:
+       0: ldc           #13                 // String I am B
+       2: getstatic     #19                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       5: swap
+       6: invokevirtual #25                 // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
+       9: return
+
+  static {};
+    Code:
+       0: new           #2                  // class B
+       3: dup
+       4: invokespecial #27                 // Method "<init>":()V
+       7: putstatic     #30                 // Field INSTANCE:LB;
+      10: return
+}

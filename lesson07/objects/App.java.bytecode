@@ -1,0 +1,20 @@
+Compiled from "App.java"
+public class App {
+  public App();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: getstatic     #7                  // Field B1.INSTANCE:LB1;
+       3: astore_1
+       4: aload_1
+       5: invokevirtual #13                 // Method B1.foo:()V
+       8: getstatic     #16                 // Field B.INSTANCE:LB;
+      11: astore_2
+      12: aload_2
+      13: invokevirtual #21                 // Method B.foo:()V
+      16: return
+}

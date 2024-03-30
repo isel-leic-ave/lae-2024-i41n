@@ -1,0 +1,30 @@
+Compiled from "App.kt"
+public final class Person {
+  public Person(java.lang.String);
+    Code:
+       0: aload_1
+       1: ldc           #9                  // String name
+       3: invokestatic  #15                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: aload_0
+       7: invokespecial #18                 // Method java/lang/Object."<init>":()V
+      10: aload_0
+      11: aload_1
+      12: putfield      #21                 // Field name:Ljava/lang/String;
+      15: return
+
+  public final java.lang.String getName();
+    Code:
+       0: aload_0
+       1: getfield      #21                 // Field name:Ljava/lang/String;
+       4: areturn
+
+  public final void setName(java.lang.String);
+    Code:
+       0: aload_1
+       1: ldc           #28                 // String <set-?>
+       3: invokestatic  #15                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: aload_0
+       7: aload_1
+       8: putfield      #21                 // Field name:Ljava/lang/String;
+      11: return
+}

@@ -1,0 +1,17 @@
+
+
+
+
+Compiled from "Program.kt"
+public final class ProgramKt {
+  public static final void main();
+    Code:
+       0: getstatic     #12                 // Field B.INSTANCE:LB;
+       3: invokevirtual #15                 // Method B.foo:()V
+       6: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: invokestatic  #18                 // Method main:()V
+       3: return
+}

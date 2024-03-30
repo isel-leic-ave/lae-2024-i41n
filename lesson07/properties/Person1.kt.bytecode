@@ -1,0 +1,24 @@
+Compiled from "Person1.java"
+public class Person1 {
+  public Person1(java.lang.String);
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: putfield      #7                  // Field name:Ljava/lang/String;
+       9: return
+
+  public java.lang.String getName();
+    Code:
+       0: aload_0
+       1: getfield      #7                  // Field name:Ljava/lang/String;
+       4: areturn
+
+  public void setName(java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #7                  // Field name:Ljava/lang/String;
+       5: return
+}

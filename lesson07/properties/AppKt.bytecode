@@ -1,0 +1,37 @@
+Compiled from "App.kt"
+public final class AppKt {
+  public static final int getX();
+    Code:
+       0: getstatic     #10                 // Field x:I
+       3: ireturn
+
+  public static final void main();
+    Code:
+       0: new           #14                 // class Person
+       3: dup
+       4: ldc           #16                 // String Maria
+       6: invokespecial #20                 // Method Person."<init>":(Ljava/lang/String;)V
+       9: astore_0
+      10: aload_0
+      11: invokevirtual #24                 // Method Person.getName:()Ljava/lang/String;
+      14: getstatic     #30                 // Field java/lang/System.out:Ljava/io/PrintStream;
+      17: swap
+      18: invokevirtual #36                 // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
+      21: getstatic     #10                 // Field x:I
+      24: istore_1
+      25: getstatic     #30                 // Field java/lang/System.out:Ljava/io/PrintStream;
+      28: iload_1
+      29: invokevirtual #39                 // Method java/io/PrintStream.println:(I)V
+      32: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: invokestatic  #44                 // Method main:()V
+       3: return
+
+  static {};
+    Code:
+       0: bipush        10
+       2: putstatic     #10                 // Field x:I
+       5: return
+}
