@@ -1,0 +1,82 @@
+Compiled from "Artist.kt"
+public final class pt.isel.Artist {
+  public pt.isel.Artist(java.lang.String, java.lang.String);
+    Code:
+       0: aload_1
+       1: ldc           #9                  // String name
+       3: invokestatic  #15                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: aload_2
+       7: ldc           #17                 // String from
+       9: invokestatic  #15                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+      12: aload_0
+      13: invokespecial #20                 // Method java/lang/Object."<init>":()V
+      16: aload_0
+      17: aload_1
+      18: putfield      #23                 // Field name:Ljava/lang/String;
+      21: aload_0
+      22: aload_2
+      23: putfield      #25                 // Field from:Ljava/lang/String;
+      26: return
+
+  public pt.isel.Artist(java.lang.String, java.lang.String, int, kotlin.jvm.internal.DefaultConstructorMarker);
+    Code:
+       0: iload_3
+       1: iconst_1
+       2: iand
+       3: ifeq          9
+       6: ldc           #30                 // String
+       8: astore_1
+       9: iload_3
+      10: iconst_2
+      11: iand
+      12: ifeq          18
+      15: ldc           #32                 // String Tugolândia
+      17: astore_2
+      18: aload_0
+      19: aload_1
+      20: aload_2
+      21: invokespecial #34                 // Method "<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      24: return
+
+  public final java.lang.String getName();
+    Code:
+       0: aload_0
+       1: getfield      #23                 // Field name:Ljava/lang/String;
+       4: areturn
+
+  public final void setName(java.lang.String);
+    Code:
+       0: aload_1
+       1: ldc           #40                 // String <set-?>
+       3: invokestatic  #15                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: aload_0
+       7: aload_1
+       8: putfield      #23                 // Field name:Ljava/lang/String;
+      11: return
+
+  public final java.lang.String getFrom();
+    Code:
+       0: aload_0
+       1: getfield      #25                 // Field from:Ljava/lang/String;
+       4: areturn
+
+  public final void setFrom(java.lang.String);
+    Code:
+       0: aload_1
+       1: ldc           #40                 // String <set-?>
+       3: invokestatic  #15                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: aload_0
+       7: aload_1
+       8: putfield      #25                 // Field from:Ljava/lang/String;
+      11: return
+
+  public pt.isel.Artist();
+    Code:
+       0: aload_0
+       1: aconst_null
+       2: aconst_null
+       3: iconst_3
+       4: aconst_null
+       5: invokespecial #44                 // Method "<init>":(Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+       8: return
+}
