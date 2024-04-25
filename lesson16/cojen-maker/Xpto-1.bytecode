@@ -1,0 +1,14 @@
+public class Xpto-1 {
+  public Xpto-1();
+    Code:
+       0: aload_0
+       1: invokespecial #21                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public void run();
+    Code:
+       0: getstatic     #11                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       3: ldc           #25                 // String hello, world
+       5: invokevirtual #17                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       8: return
+}

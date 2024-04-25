@@ -1,0 +1,18 @@
+public class Dummy-9 {
+  public Dummy-9(int);
+    Code:
+       0: aload_0
+       1: invokespecial #11                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: iload_1
+       6: putfield      #13                 // Field nr:I
+       9: return
+
+  public int mul(int);
+    Code:
+       0: aload_0
+       1: getfield      #13                 // Field nr:I
+       4: iload_1
+       5: imul
+       6: ireturn
+}
