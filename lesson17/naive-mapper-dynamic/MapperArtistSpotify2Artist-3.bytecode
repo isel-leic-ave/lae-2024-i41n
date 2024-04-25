@@ -1,0 +1,30 @@
+Classfile /Users/luisfalcao/Library/CloudStorage/OneDrive-InstitutoSuperiordeEngenhariadeLisboa/ISEL/Disciplinas/2023_2024/2023-2024VerLAE/Repositories/lae-2024-i41n-LF/lesson17/naive-mapper-dynamic/MapperArtistSpotify2Artist-3.class
+  Last modified Apr 19, 2024; size 202 bytes
+  SHA-256 checksum 990007738db2623f72e27434c8997b7978c5abd4c7dfcb3618c87846905ae110
+public class MapperArtistSpotify2Artist-3 implements pt.isel.Mapper
+  minor version: 0
+  major version: 61
+  flags: (0x0001) ACC_PUBLIC
+  this_class: #2                          // "MapperArtistSpotify2Artist-3"
+  super_class: #8                         // java/lang/Object
+  interfaces: 1, fields: 0, methods: 1, attributes: 0
+Constant pool:
+   #1 = Utf8               MapperArtistSpotify2Artist-3
+   #2 = Class              #1             // "MapperArtistSpotify2Artist-3"
+   #3 = Utf8               pt/isel/Mapper
+   #4 = Class              #3             // pt/isel/Mapper
+   #5 = Utf8               mapFrom
+   #6 = Utf8               (Ljava/lang/Object;)Lpt/isel/Artist;
+   #7 = Utf8               java/lang/Object
+   #8 = Class              #7             // java/lang/Object
+   #9 = Utf8               StackMapTable
+  #10 = Utf8               Code
+{
+  public pt.isel.Artist mapFrom(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)Lpt/isel/Artist;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=2, args_size=2
+         0: aconst_null
+         1: areturn
+}

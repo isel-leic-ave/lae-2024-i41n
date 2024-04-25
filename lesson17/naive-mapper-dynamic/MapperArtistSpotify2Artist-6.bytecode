@@ -1,0 +1,43 @@
+Classfile /Users/luisfalcao/Library/CloudStorage/OneDrive-InstitutoSuperiordeEngenhariadeLisboa/ISEL/Disciplinas/2023_2024/2023-2024VerLAE/Repositories/lae-2024-i41n-LF/lesson17/naive-mapper-dynamic/MapperArtistSpotify2Artist-6.class
+  Last modified Apr 19, 2024; size 258 bytes
+  SHA-256 checksum becfe77173dbe47eec4917ffc0dae4d8adb3589e76d8a9b37027d33766319c10
+public class MapperArtistSpotify2Artist-6 implements pt.isel.Mapper
+  minor version: 0
+  major version: 61
+  flags: (0javax0001) ACC_PUBLIC
+  this_class: #2                          // "MapperArtistSpotify2Artist-6"
+  super_class: #10                        // java/lang/Object
+  interfaces: 1, fields: 0, methods: 2, attributes: 0
+Constant pool:
+   #1 = Utf8               MapperArtistSpotify2Artist-6
+   #2 = Class              #1             // "MapperArtistSpotify2Artist-6"
+   #3 = Utf8               pt/isel/Mapper
+   #4 = Class              #3             // pt/isel/Mapper
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Utf8               mapFrom
+   #8 = Utf8               (Ljava/lang/Object;)Lpt/isel/Artist;
+   #9 = Utf8               java/lang/Object
+  #10 = Class              #9             // java/lang/Object
+  #11 = NameAndType        #5:#6          // "<init>":()V
+  #12 = Methodref          #10.#11        // java/lang/Object."<init>":()V
+  #13 = Utf8               StackMapTable
+  #14 = Utf8               Code
+{
+  MapperArtistSpotify2Artist-6();
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #12                 // Method java/lang/Object."<init>":()V
+         4: return
+
+  public pt.isel.Artist mapFrom(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)Lpt/isel/Artist;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=2, args_size=2
+         0: aconst_null
+         1: areturn
+}
